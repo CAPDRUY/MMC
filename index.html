@@ -198,9 +198,9 @@
             const diferencia = cumple - hoy;
             const elemento = document.getElementById('contador');
 
-            // ✅ SIN ALERTAS NI VENTANAS EXTERNAS: TODO SE MUESTRA ADENTRO
+            // ✅ SIN ALERTAS
             if (diferencia <= 0) {
-                elemento.innerHTML = "🎊 ¡HOY ES TU CUMPLEAÑOS! 🎂✨<br>¡Que sea el mejor día de todos! 🥳";
+                elemento.innerHTML = "🎊 ¡HOY ES TU CUMPLEAÑOS! 🎂✨<br>¡Pásala Bonito en tu dia 💛! 🥳";
             } else {
                 const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
                 const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -216,7 +216,7 @@
         actualizarContador();
         setInterval(actualizarContador, 1000);
 
-        // 🎵 LAS 6 CANCIONES - EXACTAMENTE IGUALES AL QUE FUNCIONABA
+        // 🎵 LAS 6 CANCIONES 
         const canciones = [
             { titulo: "Morat - No Se Va", id: "USDX0X-d588" },
             { titulo: "Morat & Juanes - 506", id: "Hc_kwCGNhn0" },
